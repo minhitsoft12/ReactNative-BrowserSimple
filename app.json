@@ -2,6 +2,7 @@
   "expo": {
     "name": "BrowserProject",
     "slug": "BrowserProject",
+    "scheme": "mychromeapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -11,17 +12,41 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "http"
+            },
+            {
+              "scheme": "https"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "package": "com.minhitsoft1209.BrowserProject"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1123be38-6c68-46a0-bd17-4347dcfd569d"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "n"
     }
   }
 }
