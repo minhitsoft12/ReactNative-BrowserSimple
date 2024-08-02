@@ -1,1 +1,1 @@
-# ReactNative_Project
+# ReactNative-BrowserSimple
